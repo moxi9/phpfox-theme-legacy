@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html {{ html }}>
+	<head>
+		<title>{{ title }}</title>
+		{{ header }}
+	</head>
+	<body {{ body }}>
+
+		<div id="top-nav">
+			<div class="holder">
+				{{ logo }}
+				{{ notify }}
+				{{ search }}
+				<div id="panel"></div>
+			</div>
+		</div>
+
+		<div id="main">
+
+			<div class="breadcrumb-holder">
+				<div class="holder">
+					{{ breadcrumb }}
+				</div>
+			</div>
+
+			<div id="top">
+				{{ top }}
+			</div>
+
+			<div id="container">
+
+				<div id="left">
+					<div id="header_menu">
+						{{ share }}
+						{{ menu }}
+					</div>
+
+				</div>
+				<div id="content">
+					{{ h1 }}
+					{{ errors }}
+					{{ content }}
+				</div>
+				<div id="right">
+					{{ left }}
+					{{ right }}
+				</div>
+
+			</div>
+		</div>
+
+		<footer>
+			{{ footer }}
+			{{ copyright }}
+		</footer>
+
+		{{ js }}
+
+	</body>
+</html>
