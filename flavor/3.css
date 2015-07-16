@@ -2535,7 +2535,7 @@ input[type="password"]:focus,
 textarea,
 textarea:focus,
 select {
-  background: #ffffff;
+  background: #f5f5f5;
   color: #999999;
   border: 1px transparent solid;
   padding: 10px 0px;
@@ -2599,7 +2599,7 @@ select {
 .table .table_right input[type="password"],
 .table .table_right textarea,
 .table .table_right textarea:focus {
-  background: #ffffff;
+  background: #f5f5f5;
   color: #999999;
   border: 0px;
   padding: 5px 0px;
@@ -2629,7 +2629,7 @@ select {
   display: block;
   margin-bottom: 10px;
   padding: 5px;
-  background: #f5f5f5;
+  background: #ebebeb;
 }
 .table .table_right .js_datepicker_holder input[type="text"] {
   text-indent: 30px;
@@ -4860,7 +4860,7 @@ div.header_bar_menu ul.header_bar_drop li a:hover {
   position: relative;
 }
 .edit_menu_container {
-  background: #ffffff;
+  background: #f5f5f5;
   padding: 0px 0px 40px 0px;
   position: relative;
   border: 0px;
@@ -4875,7 +4875,7 @@ div.header_bar_menu ul.header_bar_drop li a:hover {
   border-color: transparent;
 }
 .global_attachment {
-  background: #fafafa;
+  background: #f0f0f0;
   border: 0px;
   height: 40px;
   line-height: 40px;
@@ -6604,7 +6604,7 @@ div.comment_mini_end {
   margin-top: 20px;
 }
 .feed_form_textarea {
-  background: #ffffff;
+  background: #f5f5f5;
   color: #999999;
   padding: 10px;
 }
@@ -7857,7 +7857,7 @@ span.forum_tag_sticky {
 }
 .js_custom_search_friend_holder {
   border: 1px transparent solid;
-  background: #ffffff;
+  background: #f5f5f5;
   padding: 0px;
 }
 .js_custom_search_friend_holder > ul {
@@ -7904,7 +7904,7 @@ span.forum_tag_sticky {
   font-size: 12px;
 }
 #js_friend_loader input {
-  background: #ffffff;
+  background: #f5f5f5;
   color: #999999;
   border: 0px;
   padding: 5px 0px;
@@ -8728,7 +8728,7 @@ ul.activity_feed_form_attach li a:hover {
   margin-bottom: 15px;
 }
 #page_poll_add .placeholder input[type="text"] {
-  background: #e6e6e6;
+  background: #dbdbdb;
   text-indent: 32px;
   padding: 15px 0px;
 }
@@ -10789,6 +10789,7 @@ nav.notifications > ul > li._panel_search {
 #page_user_browse #container > div {
   padding: 0px;
 }
+#page_photo_view.photo_is_active #container,
 #page_pages_view #container,
 #page_profile_index #container,
 #page_photo_index #container,
@@ -10796,7 +10797,11 @@ nav.notifications > ul > li._panel_search {
 #container {
   width: 1130px;
   margin: auto;
+  display: table;
 }
+#page_pages_view #content,
+#page_user_browse #content,
+#page_user_browse #container > div#content,
 #page_pages_view #content,
 #page_user_browse #content,
 #page_user_browse #container > div#content,
@@ -10957,6 +10962,7 @@ nav.notifications > ul > li > a.active:hover i {
 .photos_stream {
   left: 0px;
 }
+._is_profile_view .breadcrumb-holder,
 ._is_pages_view .breadcrumb-holder,
 #page_pages_view .breadcrumb-holder,
 #page_photo_view .breadcrumb-holder,
@@ -10992,7 +10998,8 @@ nav.notifications > ul > li > a.active:hover i {
   margin-left: 5px;
 }
 #page_profile_index #header_menu,
-._is_pages_view #header_menu {
+._is_pages_view #header_menu,
+._is_profile_view #header_menu {
   display: none;
 }
 .js_temp_friend_search_form {
@@ -11046,7 +11053,7 @@ nav.notifications > ul > li > a.active:hover i {
 .page_section_menu_header ul li a,
 .page_section_menu_header ul li a:hover {
   text-transform: none;
-  border-bottom: 3px #dfdfdf solid;
+  border-top: 2px #dfdfdf solid;
 }
 input.button {
   text-transform: none;
@@ -11086,4 +11093,33 @@ input.button {
   padding: 0px 0px 5px 0px;
   margin-bottom: 10px;
   color: #a2a2a2;
+}
+.table {
+  background: #ffffff;
+  padding: 10px;
+}
+.table .table_left {
+  padding-top: 10px;
+}
+.table .table_right {
+  padding: 10px;
+}
+.table .table_right,
+.table .table_right input[type="email"],
+.table .table_right input[type="text"],
+.table .table_right input[type="password"],
+.table .table_right textarea,
+.table .table_right textarea:focus {
+  background: #f5f5f5;
+}
+.table .table_right .extra_info {
+  border-top: 1px #dfdfdf solid;
+}
+#page_forum_index #content .block > .title .toggle,
+#page_forum_index #content .block_clear > .title .toggle {
+  top: 0px;
+}
+#container #content > ._block_h1 > h1 {
+  background: #ffffff;
+  padding: 10px;
 }

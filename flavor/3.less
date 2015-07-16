@@ -73,7 +73,7 @@
 @hoverCategories: true;
 
 //== Forms
-@formBg: @blockBg;
+@formBg: darken(#fff, 4%);
 @formColor: @blockColor;
 @formBorder: 1px transparent solid;
 
@@ -180,12 +180,13 @@ nav.notifications > ul > li._panel_search {
 	padding:0px;
 }
 
-#page_pages_view #container, #page_profile_index #container, #page_photo_index #container, #page_user_browse #container, #container {
+#page_photo_view.photo_is_active #container, #page_pages_view #container, #page_profile_index #container, #page_photo_index #container, #page_user_browse #container, #container {
 	width:@containerMaxWidthFull;
 	margin:auto;
+	display:table;
 }
 
-#page_pages_view #content, #page_user_browse #content, #page_user_browse #container > div#content, #content {
+#page_pages_view #content, #page_user_browse #content, #page_user_browse #container > div#content, #page_pages_view #content, #page_user_browse #content, #page_user_browse #container > div#content, #content {
 	max-width:none;
 	width:@contentWidth;
 	padding:0px 20px;
@@ -353,7 +354,7 @@ nav.notifications > ul > li > a.active, nav.notifications > ul > li > a.active:h
 	left:0px;
 }
 
-._is_pages_view, #page_pages_view, #page_photo_view, #page_core_index-member, #page_profile_index {
+._is_profile_view, ._is_pages_view, #page_pages_view, #page_photo_view, #page_core_index-member, #page_profile_index {
 	.breadcrumb-holder {
 		display:none;
 	}
@@ -391,7 +392,7 @@ nav.notifications > ul > li > a.active, nav.notifications > ul > li > a.active:h
 	margin-left:5px;
 }
 
-#page_profile_index, ._is_pages_view {
+#page_profile_index, ._is_pages_view, ._is_profile_view  {
 	#header_menu {
 		display:none;
 	}
@@ -457,7 +458,7 @@ nav.notifications > ul > li > a.active, nav.notifications > ul > li > a.active:h
 
 .page_section_menu_header ul li a, .page_section_menu_header ul li a:hover {
 	text-transform:none;
-	border-bottom:3px #dfdfdf solid;
+	border-top:2px #dfdfdf solid;
 }
 
 input.button {
@@ -480,4 +481,34 @@ input.button {
 	padding:0px 0px 5px 0px;
 	margin-bottom:10px;
 	color:@blockTitleColor;
+}
+
+.table {
+	background:@blockBg;
+	padding:@blockContentPadding;
+}
+
+.table .table_left {
+	padding-top:10px;
+}
+
+.table .table_right {
+	padding:10px;
+}
+
+.table .table_right, .table .table_right input[type="email"], .table .table_right input[type="text"], .table .table_right input[type="password"], .table .table_right textarea, .table .table_right textarea:focus {
+	background:@formBg;
+}
+
+.table .table_right .extra_info {
+	border-top:1px #dfdfdf solid;
+}
+
+#page_forum_index #content .block > .title .toggle, #page_forum_index #content .block_clear > .title .toggle {
+	top:0px;
+}
+
+#container #content > ._block_h1 > h1 {
+	background:@blockBg;
+	padding:@blockContentPadding;
 }
