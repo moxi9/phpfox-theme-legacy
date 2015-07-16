@@ -11015,6 +11015,11 @@ nav.notifications > ul > li > a.active:hover i {
   font-size: 15px;
   top: 4px;
 }
+.feed_form_user img {
+  max-width: 32px;
+  max-height: 32px;
+  left: 0px;
+}
 .feed_form_user .feed_form_user_info {
   left: 40px;
 }
